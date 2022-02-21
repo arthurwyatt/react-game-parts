@@ -1,0 +1,13 @@
+
+.empty {
+    border: 1px solid #eeeeee;
+    background-color: #cccccc;
+    color: black;
+    padding: 10px;
+}
+.wall {
+    border: 1px solid #333333;
+    background-color: #666666;
+    color: white;
+    padding: 10px;
+}

@@ -1,0 +1,11 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-auto-rows:100px;
+  }
+
+  .wrapper > div {
+      width: 100px;
+      height: 100px;
+      box-sizing: border-box;
+  }
