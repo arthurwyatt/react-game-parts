@@ -1,5 +1,5 @@
 import React from 'react';
-import './Cell.css';
+import './assets/cell.css';
 
 import { Cell } from '../components/map/cell/cell';
 
