@@ -9,6 +9,11 @@ import { Cell } from "../cell/Cell";
 */
 export const Grid = ({  data, width, height}) => {
 
+  if (width * height !== data.length) {
+    return (
+      <div>Invalid grid.</div>
+    )
+  }
   return (
     <div className="wrapper">
       {data.map((cell, index) => (
@@ -23,6 +28,12 @@ Grid.propTypes = {
    * Array of type MapCell
    */
   data: PropTypes.array.isRequired,
-
-
+  /**
+   * Cells wide
+   */
+  width: PropTypes.number.isRequired,
+  /**
+   * Cells High
+   */
+   height: PropTypes.number.isRequired,
 };
