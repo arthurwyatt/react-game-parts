@@ -1,7 +1,7 @@
 export default class MapCell {
     constructor (cellType, label, isWall) {
         this.cellType = cellType;
-        this.Label = label;
+        this.label = label;
         this.isWall = isWall;
     }
 }
