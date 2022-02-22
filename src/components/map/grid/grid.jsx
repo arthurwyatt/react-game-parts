@@ -5,8 +5,8 @@ import './grid.css';
 import { Cell } from "../cell/Cell";
 
 /**
- * A single cell in the grid
- */
+ * A grid of cells rendered from data
+*/
 export const Grid = ({  data, width, height}) => {
 
   return (

@@ -3,7 +3,7 @@ import './assets/cell.css';
 
 import { Cell } from '../components/map/cell/Cell';
 
-import { cellType } from '../components/data/cellType'
+import { cellType } from '../data/cellType'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {

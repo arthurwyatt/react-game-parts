@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Cell.css';
-import { cellType } from  '../../data/cellType';
+import { cellType } from  '../../../data/cellType';
 
 /**
  * A single cell in the grid
