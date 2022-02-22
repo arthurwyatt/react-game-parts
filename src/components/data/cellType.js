@@ -1,4 +1,4 @@
 export const cellType = {
-    "wall" : "wall",
-    "empty" : "empty"
+  wall: "wall",
+  empty: "empty",
 };
