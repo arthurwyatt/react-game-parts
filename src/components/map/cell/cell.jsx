@@ -1,7 +1,8 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import './cell.css';
+import './Cell.css';
+import { cellType } from  '../../data/cellType';
 
 /**
  * A single cell in the grid
@@ -17,11 +18,13 @@ export const Cell = ({  cellType, label}) => {
   );
 };
 
+
+
 Cell.propTypes = {
   /**
    * Cell Type - wall or ground
    */
-  cellType: PropTypes.oneOf(['wall', 'empty']).isRequired,
+  cellType: PropTypes.oneOf(Object.values(cellType)).isRequired,
   /**
    * Optional label
    */

@@ -1,7 +1,9 @@
 import React from 'react';
 import './assets/cell.css';
 
-import { Cell } from '../components/map/cell/cell';
+import { Cell } from '../components/map/cell/Cell';
+
+import { cellType } from '../components/data/cellType'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -9,7 +11,7 @@ export default {
   component: Cell,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    cellType: { options: ['empty', 'wall'], control: { type: 'select'} },
+    cellType: { options: Object.values(cellType), control: { type: 'select'} },
 
   },
 };
@@ -25,12 +27,12 @@ return (
 
 export const Wall = Template.bind({});
 Wall.args = {
-  cellType: 'wall',
+  cellType: cellType.wall,
   label: 'wall'
 };
 
 export const Empty = Template.bind({});
 Empty.args = {
-  cellType: 'empty',
+  cellType: cellType.empty,
   label: 'empty'
 };
