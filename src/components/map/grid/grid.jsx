@@ -1,21 +1,29 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import './grid.css';
+import './Grid.css';
 import { Cell } from "../cell/Cell";
 
 /**
  * A grid of cells rendered from data
 */
-export const Grid = ({  data, width, height}) => {
+export const Grid = ({  data, rows, cols, width, height}) => {
 
-  if (width * height !== data.length) {
+  if (cols * rows !== data.length) {
     return (
       <div>Invalid grid.</div>
     )
   }
+
+  const styles = {
+    height: height,
+    width: width,
+    gridTemplateColumns: `repeat(${cols}, 1fr)`,
+    gridTemplateRows: `repeat(${rows}, 1fr)`,
+  };
+
   return (
-    <div className="wrapper">
+    <div className="wrapper" style={styles}>
       {data.map((cell, index) => (
         <Cell key={index} cellType={cell.cellType} label={cell.label}/>
       ))}
@@ -31,9 +39,21 @@ Grid.propTypes = {
   /**
    * Cells wide
    */
-  width: PropTypes.number.isRequired,
+  cols: PropTypes.number.isRequired,
   /**
    * Cells High
    */
-   height: PropTypes.number.isRequired,
+   rows: PropTypes.number.isRequired,
+   /**
+   * Cells High
+   */
+   height: PropTypes.string,
+   /**
+   * Cells Width
+   */
+  width: PropTypes.string,
+};
+
+Cell.defaultProps = {
+  cellSize: 100,
 };

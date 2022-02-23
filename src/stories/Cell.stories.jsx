@@ -19,7 +19,7 @@ export default {
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template = (args) => {
 return (
-  <div className="wrapper">
+  <div className="cellWrapper">
   <Cell {...args}></Cell>
   </div>
 )};

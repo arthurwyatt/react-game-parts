@@ -1,0 +1,11 @@
+.wrapper {
+    display: grid;
+  }
+
+  .wrapper > div {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 5%;
+    font-size: 10px;
+  }
+
