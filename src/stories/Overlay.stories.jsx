@@ -14,6 +14,7 @@ export default {
     width: "400px",
     selected: [],
     showGrid: true,
+    onClick: (index) => { alert(`you clicked ${index}`) ;}
   }
 };
 
@@ -26,30 +27,15 @@ const Template = (args) => {
 
 export const Unselected = Template.bind({});
 Unselected.args = {
-  cols: 4,
-  rows: 4,
-  height: "400px",
-  width: "400px",
-  selected: [],
-  showGrid: true
 };
 
 export const Selected = Template.bind({});
 Selected.args = {
-  cols: 4,
-  rows: 4,
-  height: "400px",
-  width: "400px",
   selected: [5, 6, 9, 10],
-  showGrid: true
 };
 
 export const HideGrid = Template.bind({});
 HideGrid.args = {
-  cols: 4,
-  rows: 4,
-  height: "400px",
-  width: "400px",
   selected: [0, 1, 2, 3, 4, 7, 8, 11, 12, 13, 14, 15],
   showGrid: false
 };

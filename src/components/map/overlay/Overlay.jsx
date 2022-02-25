@@ -6,7 +6,7 @@ import './Overlay.css';
 /**
  * A grid of cells rendered from data
 */
-export const Overlay = ({  selected, rows, cols, width, height, showGrid}) => {
+export const Overlay = ({  selected, rows, cols, width, height, showGrid, onClick}) => {
 
 
 
@@ -23,20 +23,24 @@ const data = [];
 
 const length = cols * rows;
 
+const handleClick = (index) => {
+  if (onClick) {
+    onClick(index);
+  }
+}
+
 for (let i=0; i < length; i++) {
   data.push(selected.includes(i));
 }
 
-data.forEach((cell, index) => {
-  data[index] = (selected.includes(index)) 
-})
-
-console.log(length, data, selected);
-
   return (
     <div className={classes} style={styles}>
       {data.map((selected, index) => (
-        <div className={selected ? "selected": ""} data-testid="overlayCell" key={`overlay-${index}`}></div>
+        <div 
+        className={selected ? "selected": ""} 
+        data-testid="overlayCell" 
+        key={`overlay-${index}`} 
+        onClick={() => handleClick(index)}></div>
       ))}
     </div>
   );
