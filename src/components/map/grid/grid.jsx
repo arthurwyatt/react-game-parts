@@ -25,7 +25,7 @@ export const Grid = ({  data, rows, cols, width, height}) => {
   return (
     <div className="wrapper" style={styles}>
       {data.map((cell, index) => (
-        <Cell key={index} cellType={cell.cellType} label={cell.label}/>
+        <Cell key={`cell-${index}`} cellType={cell.cellType} label={cell.label}/>
       ))}
     </div>
   );
@@ -45,15 +45,16 @@ Grid.propTypes = {
    */
    rows: PropTypes.number.isRequired,
    /**
-   * Cells High
+   * Container High
    */
    height: PropTypes.string,
    /**
-   * Cells Width
+   * Container Width
    */
   width: PropTypes.string,
 };
 
 Cell.defaultProps = {
-  cellSize: 100,
+  height: "100px",
+  width: "100px"
 };

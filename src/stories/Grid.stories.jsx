@@ -56,7 +56,7 @@ Valid.args = {
 
 export const Invalid = Template.bind({});
 Invalid.args = {
-  height: 1,
-  width: 1,
+  rows: 1,
+  cols: 1,
   data: []
 };
