@@ -7,7 +7,7 @@ import { cellType } from '../data/cellType'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Map/Cell',
+  title: 'Components/Map/Cell',
   component: Cell,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {

@@ -5,7 +5,7 @@ import { Overlay } from '../components/map/overlay/Overlay';
 
 
 export default {
-  title: 'Example/Map/Overlay',
+  title: 'Components/Map/Overlay',
   component: Overlay,
   args: {
     cols: 4,

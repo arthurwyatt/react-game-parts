@@ -1,23 +1,23 @@
-.overlayWrapper {
+.map-overlay {
     display: grid;
   }
 
-  .overlayWrapper > div {
+  .map-overlay  > div {
     box-sizing: border-box;
     overflow: hidden;
     padding: 5%;
     font-size: 10px;
   }
 
-  .overlayWrapper > div.selected {
-    background-color: yellow;
+  .map-overlay  > div.selected {
+    border: 2px solid #daa520;
   }
 
-  .overlayWrapper.showGrid > div {
+  .map-overlay.showGrid > div {
     border: 1px solid #eeeeee;
   }
 
-  .overlayWrapper > div:hover {
+  .map-overlay  > div:hover {
     border: 1px solid #daa520;
   }
 

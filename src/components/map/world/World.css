@@ -1,0 +1,5 @@
+.map-world .map-overlay, .map-world .map-grid {
+  position: absolute;
+  left: 0;
+  top: 0;
+} 

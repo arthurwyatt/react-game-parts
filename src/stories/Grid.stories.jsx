@@ -6,7 +6,7 @@ import { cellType } from '../data/cellType'
 import MapCell from "../data/MapCell";
 
 export default {
-  title: 'Example/Map/Grid',
+  title: 'Components/Map/Grid',
   component: Grid,
   args: {
     cols: 1,

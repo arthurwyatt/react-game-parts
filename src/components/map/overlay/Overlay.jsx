@@ -10,7 +10,7 @@ export const Overlay = ({  selected, rows, cols, width, height, showGrid, onClic
 
 
 
-  const classes = `overlayWrapper ${ showGrid ? "showGrid" : "" }`
+  const classes = `map-overlay ${ showGrid ? "showGrid" : "" }`
 
   const styles = {
     height: height,

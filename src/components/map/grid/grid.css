@@ -1,8 +1,8 @@
-.wrapper {
+.map-grid {
     display: grid;
   }
 
-  .wrapper > div {
+  .map-grid > div {
     box-sizing: border-box;
     overflow: hidden;
     padding: 5%;
