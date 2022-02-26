@@ -8,10 +8,10 @@ export default {
   title: 'Components/Map/Overlay',
   component: Overlay,
   args: {
-    cols: 4,
-    rows: 4,
-    height: "400px",
-    width: "400px",
+    cols: 3,
+    rows: 3,
+    height: "300px",
+    width: "300px",
     selected: [],
     showGrid: true,
   },
@@ -31,11 +31,11 @@ Unselected.args = {
 
 export const Selected = Template.bind({});
 Selected.args = {
-  selected: [5, 6, 9, 10],
+  selected: [4],
 };
 
 export const HideGrid = Template.bind({});
 HideGrid.args = {
-  selected: [0, 1, 2, 3, 4, 7, 8, 11, 12, 13, 14, 15],
+  selected: [0,2,6,,8],
   showGrid: false
 };

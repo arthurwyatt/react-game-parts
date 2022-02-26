@@ -34,11 +34,11 @@ for (let i=0; i < length; i++) {
 }
 
   return (
-    <div className={classes} style={styles}>
+    <div className={classes} style={styles} data-testid="map-overlay" >
       {data.map((selected, index) => (
         <div 
         className={selected ? "selected": ""} 
-        data-testid="overlayCell" 
+        data-testid="map-overlay-cell" 
         key={`overlay-${index}`} 
         onClick={() => handleClick(index)}></div>
       ))}

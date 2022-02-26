@@ -12,7 +12,7 @@ export const Cell = ({  cellType, label}) => {
 
 
   return (
-    <div className={cellClass}>
+    <div className={cellClass} data-testid="map-grid-cell" >
       {label}
     </div>
   );

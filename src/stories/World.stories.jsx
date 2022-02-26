@@ -2,8 +2,7 @@ import React from 'react';
 
 import { World } from '../components/map/world/World';
 
-import { cellType } from '../data/cellType'
-import MapCell from "../data/MapCell";
+import { fourByFourMap } from "../data/testdata/fourByFourMap"
 
 export default {
   title: 'Components/Map/World',
@@ -13,28 +12,7 @@ export default {
     rows: 4,
     height: "400px",
     width: "400px",
-    mapData: [
-      // row 1
-      new MapCell(cellType.wall, "", true),
-      new MapCell(cellType.wall, "", true),
-      new MapCell(cellType.wall, "", true),
-      new MapCell(cellType.wall, "", true),
-      // row 2
-      new MapCell(cellType.wall, "", true),
-      new MapCell(cellType.empty, "1", true),
-      new MapCell(cellType.empty, "2", true),
-      new MapCell(cellType.wall, "", true),
-      // row 3
-      new MapCell(cellType.wall, "", true),
-      new MapCell(cellType.empty, "3", true),
-      new MapCell(cellType.empty, "4", true),
-      new MapCell(cellType.wall, "", true),
-      // row 4
-      new MapCell(cellType.wall, "", true),
-      new MapCell(cellType.wall, "", true),
-      new MapCell(cellType.wall, "", true),
-      new MapCell(cellType.wall, "", true),
-    ],
+    mapData: fourByFourMap,
     showGrid: true,
     selected: []
   },

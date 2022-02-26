@@ -23,7 +23,7 @@ export const Grid = ({  data, rows, cols, width, height}) => {
   };
 
   return (
-    <div className="map-grid" style={styles}>
+    <div className="map-grid" style={styles} data-testid="map-grid" >
       {data.map((cell, index) => (
         <Cell key={`cell-${index}`} cellType={cell.cellType} label={cell.label}/>
       ))}
