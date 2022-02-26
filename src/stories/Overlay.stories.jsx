@@ -14,8 +14,8 @@ export default {
     width: "400px",
     selected: [],
     showGrid: true,
-    onClick: (index) => { alert(`you clicked ${index}`) ;}
-  }
+  },
+  argTypes: { onClick: { action: `clicked` } },
 };
 
 
