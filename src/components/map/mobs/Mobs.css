@@ -1,0 +1,29 @@
+.map-mobs {
+  position: relative;
+}
+
+.map-mobs > div {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.map-mobs > div > div {
+  width: 90%;
+  height: 90%;
+  margin-top: 5%;
+  margin-left: 5%;
+  border-radius: 50%;
+  color: white;
+  overflow: hidden;
+  display:flex;
+  justify-content: center; 
+  align-items:center;
+}
+
+.map-mobs > div .enemy {
+background-color: red;
+}
+
+.map-mobs > div .friendly {
+  background-color: green;
+  }
