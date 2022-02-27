@@ -3,7 +3,14 @@ import { Overlay } from "./Overlay";
 
 test("renders 3x3 grid", () => {
   render(
-    <Overlay selected={[]} cols="3" rows="3" height="400px" width="400px" />
+    <Overlay
+      selected={[]}
+      cols={3}
+      rows={3}
+      height="400px"
+      width="400px"
+      onClick={() => {}}
+    />
   );
   const cells = screen.getAllByTestId("map-overlay-cell");
   expect(cells.length).toEqual(9);
@@ -14,8 +21,8 @@ test("Overlay cells are clickable", () => {
   render(
     <Overlay
       selected={[]}
-      cols="3"
-      rows="3"
+      cols={3}
+      rows={3}
       height="400px"
       width="400px"
       onClick={onClick}

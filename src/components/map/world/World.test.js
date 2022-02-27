@@ -7,10 +7,11 @@ test("renders 3x3 grid", () => {
     <World
       mapData={threeBythreeMap}
       selected={[]}
-      cols="3"
-      rows="3"
+      cols={3}
+      rows={3}
       height="400px"
       width="400px"
+      onClick={() => {}}
     />
   );
   const cells = screen.getAllByTestId("map-grid-cell");
@@ -25,8 +26,8 @@ test("Overlay cells are clickable", () => {
     <World
       mapData={threeBythreeMap}
       selected={[]}
-      cols="3"
-      rows="3"
+      cols={3}
+      rows={3}
       height="400px"
       width="400px"
       onClick={onClick}
