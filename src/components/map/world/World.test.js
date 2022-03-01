@@ -7,6 +7,7 @@ test("renders 3x3 grid", () => {
     <World
       mapData={threeBythreeMap}
       selected={[]}
+      mobs={[]}
       cols={3}
       rows={3}
       height={400}
@@ -26,6 +27,7 @@ test("Overlay cells are clickable", () => {
     <World
       mapData={threeBythreeMap}
       selected={[]}
+      mobs={[]}
       cols={3}
       rows={3}
       height={400}

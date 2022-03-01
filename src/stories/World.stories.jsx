@@ -1,6 +1,8 @@
 import React from 'react';
 
 import { World } from '../components/map/world/World';
+import  Mob  from '../data/Mob';
+import { mobType } from '../data/mobType';
 
 import { fourByFourMap } from "../data/testdata/fourByFourMap"
 
@@ -14,7 +16,10 @@ export default {
     width: 400,
     mapData: fourByFourMap,
     showGrid: true,
-    selected: []
+    selected: [],
+    mobs: [
+      new Mob("joe1", mobType.freindly ,"joe", 5),
+      new Mob( "bob1", mobType.enemy ,"bobby", 10)],
   },
   argTypes: { onClick: { action: `clicked` } },
 };

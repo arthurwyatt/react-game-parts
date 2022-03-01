@@ -1,4 +1,4 @@
-.map-world .map-overlay, .map-world .map-grid {
+.map-world .map-overlay, .map-world .map-grid, .map-world .map-mobs {
   position: absolute;
   left: 0;
   top: 0;
