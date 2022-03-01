@@ -16,8 +16,8 @@ export const Grid = ({  data, rows, cols, width, height}) => {
   }
 
   const styles = {
-    height: height,
-    width: width,
+    width: `${width}px`,
+    height: `${height}px`,
     gridTemplateColumns: `repeat(${cols}, 1fr)`,
     gridTemplateRows: `repeat(${rows}, 1fr)`,
   };
@@ -45,16 +45,16 @@ Grid.propTypes = {
    */
    rows: PropTypes.number.isRequired,
    /**
-   * Container High
+   * Container Height in pixels
    */
-   height: PropTypes.string,
+   height: PropTypes.number,
    /**
-   * Container Width
+   * Container Width in pixels
    */
-  width: PropTypes.string,
+  width: PropTypes.number,
 };
 
 Cell.defaultProps = {
-  height: "100px",
-  width: "100px"
+  height: 100,
+  width: 100
 };

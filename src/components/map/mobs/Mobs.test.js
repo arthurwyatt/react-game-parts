@@ -8,8 +8,8 @@ test("mobs layer renders with sinlge mob", () => {
       mobs={[new Mob("mob1", "enemy", "A", "4")]}
       cols={3}
       rows={3}
-      height="400px"
-      width="400px"
+      height={400}
+      width={400}
     />
   );
   const mobs = screen.getByTestId("map-mobs");

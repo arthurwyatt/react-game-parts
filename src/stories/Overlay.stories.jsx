@@ -10,8 +10,8 @@ export default {
   args: {
     cols: 3,
     rows: 3,
-    height: "300px",
-    width: "300px",
+    height: 300,
+    width: 300,
     selected: [],
     showGrid: true,
   },
@@ -36,6 +36,7 @@ Selected.args = {
 
 export const HideGrid = Template.bind({});
 HideGrid.args = {
+
   selected: [0,2,6,,8],
   showGrid: false
 };

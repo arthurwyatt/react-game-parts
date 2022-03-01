@@ -10,8 +10,8 @@ export default {
   args: {
     cols: 1,
     rows: 1,
-    height: "100px",
-    width: "100px",
+    height: 100,
+    width: 100,
     data: []
   }
 };
@@ -27,8 +27,8 @@ export const Valid = Template.bind({});
 Valid.args = {
   cols: 4,
   rows: 4,
-  height: "400px",
-  width: "400px",
+  height: 400,
+  width: 400,
   data: fourByFourMap
 };
 

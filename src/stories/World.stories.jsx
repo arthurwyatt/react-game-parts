@@ -10,8 +10,8 @@ export default {
   args: {
     cols: 4,
     rows: 4,
-    height: "400px",
-    width: "400px",
+    height: 400,
+    width: 400,
     mapData: fourByFourMap,
     showGrid: true,
     selected: []

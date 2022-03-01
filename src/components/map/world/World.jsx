@@ -19,8 +19,8 @@ export const World = ({  mapData, selected, rows, cols, width, height, showGrid,
   }
 
   const styles = {
-    height: height,
-    width: width,
+    width: `${width}px`,
+    height: `${height}px`,
   };
 
   return (
@@ -53,13 +53,13 @@ World.propTypes = {
    */
    rows: PropTypes.number.isRequired,
    /**
-   * container height 
+   * container height in pixels
    */
-   height: PropTypes.string,
+   height: PropTypes.number,
    /**
-   * container width 
+   * container width in pixels
    */
-  width: PropTypes.string,
+  width: PropTypes.number,
    /**
    * show the grid
    */

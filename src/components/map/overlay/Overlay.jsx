@@ -13,8 +13,8 @@ export const Overlay = ({  selected, rows, cols, width, height, showGrid, onClic
   const classes = `map-overlay ${ showGrid ? "showGrid" : "" }`
 
   const styles = {
-    height: height,
-    width: width,
+    width: `${width}px`,
+    height: `${height}px`,
     gridTemplateColumns: `repeat(${cols}, 1fr)`,
     gridTemplateRows: `repeat(${rows}, 1fr)`,
   };
@@ -64,13 +64,13 @@ Overlay.propTypes = {
    */
    rows: PropTypes.number.isRequired,
    /**
-   * container height 
+   * container height in pixels 
    */
-   height: PropTypes.string,
+   height: PropTypes.number,
    /**
-   * container width 
+   * container width in pixels
    */
-  width: PropTypes.string,
+  width: PropTypes.number,
    /**
    * show the grid
    */

@@ -9,8 +9,8 @@ test("renders 3x3 grid", () => {
       selected={[]}
       cols={3}
       rows={3}
-      height="400px"
-      width="400px"
+      height={400}
+      width={400}
       onClick={() => {}}
     />
   );
@@ -28,8 +28,8 @@ test("Overlay cells are clickable", () => {
       selected={[]}
       cols={3}
       rows={3}
-      height="400px"
-      width="400px"
+      height={400}
+      width={400}
       onClick={onClick}
     />
   );
